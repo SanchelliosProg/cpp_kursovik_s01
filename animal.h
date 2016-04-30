@@ -28,6 +28,7 @@ struct Animal {
 };
 
 void printAnimal(Animal &animal);
+void printBriedInfo(Animal &animal, int index);
 void initAnimal(Animal &animal);
 void defineType(Animal &animal);
 void defineSex(Animal &animal);
@@ -36,3 +37,10 @@ void defineAge(Animal &animal);
 void doHaveHost(Animal &animal);
 int getSizeOf(DefStrings def);
 int getTreatmentIndex(Animal &animal);
+Sex getSex(const Animal& animal);
+void animalRemovementInfo(Animal &animal);
+float compareTypes(const Animal &first, const Animal &second);
+float compareGenders(const Animal &first, const Animal &second);
+float compareNames(const Animal &first, const Animal &second);
+float compareAges(const Animal &first, const Animal &second);
+float compareHostStatus(const Animal &first, const Animal &second);

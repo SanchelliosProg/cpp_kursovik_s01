@@ -77,13 +77,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="animal.cpp" />
+    <ClCompile Include="defaultShelter.cpp" />
+    <ClCompile Include="file_mainp.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="shelter.cpp" />
     <ClCompile Include="userInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animal.h" />
+    <ClInclude Include="defaultShelter.h" />
+    <ClInclude Include="file_manip.h" />
     <ClInclude Include="general.h" />
+    <ClInclude Include="shelter.h" />
     <ClInclude Include="userInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shelter.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,7 +6,7 @@ typedef void(*ANIMAL_FACADE)(Animal&);
 const char* sexToString[] = { "male", "female" };
 const char* typeToString[] = { "dog", "cat", "mouse", "rabbit", "monkey", "snake" };
 const char* treatment[] = { "his", "her", "it's" };
-const char* haveHostToString[] = { "no", "yes" };
+const char* haveHostToString[] = { "no host", "have host" };
 
 ANIMAL_FACADE animalFacade[] = {
 	defineType,
@@ -17,7 +17,6 @@ ANIMAL_FACADE animalFacade[] = {
 };
 
 void printAnimal(Animal &animal) {
-	printDivLine();
 	printf("TYPE: %s\nNAME: %s\nSEX : %s\nAGE : %d\nHOST: %s\n",
 		typeToString[animal.type], 
 		animal.name, 
@@ -25,6 +24,24 @@ void printAnimal(Animal &animal) {
 		animal.age, 
 		haveHostToString[animal.haveHost]);
 	printDivLine();
+}
+
+void printBriedInfo(Animal &animal, int index) {
+	printf("[%d] - %s the %s, %d years old, %s", 
+		(index+1), 
+		animal.name, 
+		typeToString[animal.type], 
+		animal.age,
+		haveHostToString[animal.haveHost]);
+}
+
+void animalRemovementInfo(Animal &animal) {
+	if (animal.haveHost == true) {
+		printf("%s the %s is happy to come back home!\n", animal.name, typeToString[animal.type]);
+	}
+	else {
+		printf("%s the %s finally gained it's host!\n", animal.name, typeToString[animal.type]);
+	}
 }
 
 void initAnimal(Animal &animal) {
@@ -116,4 +133,26 @@ int getTreatmentIndex(Animal &animal) {
 		return 2;
 	}
 }
+
+Sex getSex(const Animal& animal) {
+	return animal.sex;
+}
+
+//COMPARATORS
+float compareTypes(const Animal &first, const Animal &second) {
+	return first.type - second.type;
+}
+float compareGenders(const Animal &first, const Animal &second) {
+	return first.sex - second.sex;
+}
+float compareNames(const Animal &first, const Animal &second) {
+	return std::strcmp(first.name, second.name);
+}
+float compareAges(const Animal &first, const Animal &second) {
+	return first.age - second.age;
+}
+float compareHostStatus(const Animal &first, const Animal &second) {
+	return first.haveHost - second.haveHost;
+}
+
 
