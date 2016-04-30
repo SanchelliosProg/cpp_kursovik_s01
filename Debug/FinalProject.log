@@ -1,29 +1,12 @@
-﻿Build started 30.04.2016 8:19:30.
+﻿Build started 30.04.2016 11:07:46.
      1>Project "C:\Users\Саша\documents\visual studio 2013\Projects\LabsPP\FinalProject\FinalProject.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt animal.cpp defaultShelter.cpp file_mainp.cpp main.cpp shelter.cpp userInterface.cpp
-         file_mainp.cpp
-     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
-     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(38): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
-     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
-     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(56): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
-     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(59): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(230) : see declaration of 'fscanf'
-         Generating Code...
-         Compiling...
          shelter.cpp
      1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\shelter.cpp(116): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
      1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\shelter.cpp(177): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-         main.cpp
-     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\main.cpp(36): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-         defaultShelter.cpp
          animal.cpp
      1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\animal.cpp(49): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\animal.cpp(61): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -42,6 +25,23 @@
      1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\animal.cpp(152): warning C4244: 'return' : conversion from 'const int' to 'float', possible loss of data
      1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\animal.cpp(155): warning C4244: 'return' : conversion from 'int' to 'float', possible loss of data
          Generating Code...
+         Compiling...
+         main.cpp
+     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\main.cpp(37): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+         file_mainp.cpp
+     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(38): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(56): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\саша\documents\visual studio 2013\projects\labspp\finalproject\file_mainp.cpp(59): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(230) : see declaration of 'fscanf'
+         defaultShelter.cpp
+         Generating Code...
          Skipping... (no relevant changes detected)
          userInterface.cpp
        Link:
@@ -56,4 +56,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.93
+Time Elapsed 00:00:02.37

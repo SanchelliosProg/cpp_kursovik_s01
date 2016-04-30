@@ -21,6 +21,7 @@ void help() {
 		<< "[cntf]  - count girls;" << endl
 		<< "[save]  - save to file;" << endl
 		<< "[load]  - load from file;" << endl
+		<< "[flush] - flush file;" << endl
 		<< "[quit]  - to exit;"<<endl
 		<< "-------------------------------------------------------"<<endl;
 }

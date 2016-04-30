@@ -26,7 +26,7 @@ void printAnimal(Animal &animal) {
 	printDivLine();
 }
 
-void printBriedInfo(Animal &animal, int index) {
+void printBriefInfo(Animal &animal, int index) {
 	printf("[%d] - %s the %s, %d years old, %s", 
 		(index+1), 
 		animal.name, 

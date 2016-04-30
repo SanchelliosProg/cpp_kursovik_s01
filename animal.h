@@ -28,7 +28,7 @@ struct Animal {
 };
 
 void printAnimal(Animal &animal);
-void printBriedInfo(Animal &animal, int index);
+void printBriefInfo(Animal &animal, int index);
 void initAnimal(Animal &animal);
 void defineType(Animal &animal);
 void defineSex(Animal &animal);

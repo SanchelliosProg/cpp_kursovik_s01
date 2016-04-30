@@ -16,7 +16,7 @@ const char* QUIT = "quit";
 const char* SAVE = "save";
 const char* LOAD = "load";
 const char* FLUSH = "flush";
-
+const char* FLUSH_SHELTER = "fshl";
 
 void shelterCmd(Shelter &shelter);
 
@@ -29,9 +29,10 @@ int main() {
 	return 0;
 }
 
+
 void shelterCmd(Shelter &shelter) {
 	while (true) {
-		char entry[10] = {0};
+		char entry[10] = { 0 };
 		printUserInvitation();
 		scanf("%s", entry);
 		fflush(stdin);
@@ -56,10 +57,10 @@ void shelterCmd(Shelter &shelter) {
 		else if (strcmp(SORT, entry) == 0) {
 			sortChoise(shelter);
 		}
-		else if (strcmp(COUNT_MALES, entry) == 0){
+		else if (strcmp(COUNT_MALES, entry) == 0) {
 			printMalesCount(shelter);
 		}
-		else if (strcmp(COUNT_FEMALES, entry) == 0){
+		else if (strcmp(COUNT_FEMALES, entry) == 0) {
 			printFemalesCount(shelter);
 		}
 		else if (strcmp(SAVE, entry) == 0) {
@@ -74,13 +75,17 @@ void shelterCmd(Shelter &shelter) {
 		else if (strcmp(LOAD, entry) == 0) {
 			loadFromFile(shelter);
 		}
+		else if (strcmp(FLUSH_SHELTER, entry) == 0) {
+			flushCollection(shelter);
+		}
 		else if (strcmp(QUIT, entry) == 0) {
 			break;
 		}
-		
 		else {
 			puts("ERROR: UNKNOWN COMMAND");
 		}
 	}
 }
+
+
 
